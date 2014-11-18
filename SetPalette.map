@@ -1,0 +1,274 @@
+SetPalette.ld           28-Sep-93 14:46:29  Hunk Section                Page 1-1
+
+ num hunk         size filename         punit    type         base  alv     size
+   0 text         1e88 LIB:c.o          c        code            0    0      260
+                       SetPalette.o     setpalet code          260    0     11cc
+                       LIB:sc.lib       _constru code         142c    0       18
+                       LIB:sc.lib       _fpinit. code         1444    0       30
+                       LIB:sc.lib       _MemClea code         1474    0       80
+                       LIB:sc.lib       _write.c code         14f4    0      100
+                       LIB:sc.lib       _lseek.c code         15f4    0       94
+                       LIB:sc.lib       _exit.c  code         1688    0       5c
+                       LIB:sc.lib       _main.c  code         16e4    0      2a0
+                       LIB:sc.lib       _cxbrk.c code         1984    0      14c
+                       LIB:sc.lib       _chkufb. code         1ad0    0       4c
+                       LIB:sc.lib       _chkabor code         1b1c    0       50
+                       LIB:sc.lib       memchr   code         1b6c    0       24
+                       LIB:sc.lib       strncat  code         1b90    0       24
+                       LIB:sc.lib       strncpy  code         1bb4    0       24
+                       LIB:sc.lib       exit.c   code         1bd8    0       54
+                       LIB:sc.lib       autoopen code         1c2c    0      154
+                       LIB:sc.lib       diskfont code         1d80    0       5c
+                       LIB:sc.lib       io2errno code         1ddc    0       60
+                       LIB:sc.lib       main     code         1e3c    0       10
+                       LIB:amiga.lib    <noname> code         1e4c    0       1c
+                       LIB:amiga.lib    <noname> code         1e68    0       20
+   1 __MERGED      3e0 SetPalette.o     setpalet data            0    0      26c
+                       T:DG5D.0000      _ctdt.o  data          26c    0       14
+                       LIB:sc.lib       sigfunc. data          280    0       24
+                       LIB:sc.lib       _constru data          2a4    0        4
+                       LIB:sc.lib       stack.c  data          2a8    0        4
+                       LIB:sc.lib       _iob.c   data          2ac    0       68
+                       LIB:sc.lib       _ufb.c   data          314    0        8
+                       LIB:sc.lib       _fmode.c data          31c    0        8
+                       LIB:sc.lib       _cxbrk.c data          324    0       50
+                       LIB:sc.lib       exitfunc data          374    0        4
+                       LIB:sc.lib       _stdv36. data          378    0       14
+                       LIB:sc.lib       _stdwin. data          38c    0       14
+                       LIB:sc.lib       io2errno data          3a0    0       40
+                       LIB:c.o          c        bss           3e0    0       54
+                       SetPalette.o     setpalet bss           434    0      cc8
+                       LIB:sc.lib       errno.c  bss          10fc    0        4
+                       LIB:sc.lib       memheap. bss          1100    0        4
+                       LIB:sc.lib       dosbase  bss          1104    0        4
+                       LIB:sc.lib       _top.c   bss          1108    0        4
+                       LIB:sc.lib       _exit.c  bss          110c    0        4
+                       LIB:sc.lib       _main.c  bss          1110    0       c8
+                       LIB:sc.lib       oslibver bss          11d8    0        4
+                       LIB:sc.lib       diskfont bss          11dc    0        8
+SetPalette.ld          28-Sep-93 14:46:29  Symbol Section               Page 2-1
+
+symbol             offset:hunk symbol             offset:hunk
+@exit                1bdc:0    @main                1e3c:0   
+@memchr              1b78:0    @strncat             1b9c:0   
+@strncpy             1bc0:0    @_CXBRK              1988:0   
+@_XCEXIT              1c2:0    @__autoopenfail      1c2c:0   
+@__chkabort          1b1c:0    @__chkufb            1ad4:0   
+@__exit              168c:0    @__io2errno          1de0:0   
+@__lseek             1602:0    @__write             1500:0   
+_AslBase               10:1    _b4                  10f2:1   
+_b4_2                10f8:1    _ClearMsgPort         4fa:0   
+_CloseDisplay         b88:0    _CloseLibraries       66e:0   
+_Code                 43a:1    _Col12               10e6:1   
+_Col12_2             10ea:1    _DiskfontBase        11dc:1   
+_DiskFontBase          14:1    _DOSBase             1104:1   
+_DosBase                4:1    _Edit_Mode           10fa:1   
+_errno               10fc:1    _ExecBase               c:1   
+_exit                1bd8:0    _g                    466:1   
+_g4                  10f0:1    _g4_2                10f6:1   
+_GadToolsBase          18:1    _GetRGB32            1e4c:0   
+_GfxBase                0:1    _GUN8TO32             260:0   
+_GunsTemp1           10ce:1    _GunsTemp2           10da:1   
+_IClass               434:1    _IntuitionBase          8:1   
+_IObject              43e:1    _LinkerDB              (0:*)  
+_LoadIFFColors        6f0:0    _loadOrig             3a4:0   
+_main                 be6:0    _MainScreen           44e:1   
+_MainVisualInfo       442:1    _memchr              1b6c:0   
+_ng                   46a:1    _NULL                 3e0:1   
+_OpenDisplay          6fc:0    _OpenLibraries        534:0   
+_Prev_Code            43c:1    _Qualifier            438:1   
+_r4                  10ee:1    _r4_2                10f4:1   
+_ReadIMsg             4a6:0    _ReqTags               82:1   
+_SaveIFFColors        6f6:0    _SetProp              27e:0   
+_SetRGB32            1e68:0    _sp_Bc               10cc:1   
+_sp_Blue              45e:1    _sp_Gc               10ca:1   
+_sp_GList              de:1    _sp_Green             45a:1   
+_sp_Orig              488:1    _sp_Orig32            4c8:1   
+_sp_Palette           462:1    _sp_PTags             112:1   
+_sp_Rc               10c8:1    _sp_Red               456:1   
+_sp_Title             108:1    _sp_Wnd                da:1   
+_strncat             1b90:0    _strncpy             1bb4:0   
+_SysBase              408:1    _thinpaz8              2a:1   
+_thinpazfont8         452:1    _Topaz80              446:1   
+_version              13a:1    __BSSBAS               (0:*)  
+__BSSLEN               (0:*)   __CoverLength          (0:*)  
+__CoverStart           (0:*)   __CXBRK              1984:0   
+__FPERR               3ec:1    __LibRevision          (0:*)  
+__LibVersion           (0:*)   __MemCleanup         1474:0   
+__MemHeap            1100:1    __ONBREAK             400:1   
+__ONERR               3f8:1    __ONEXIT              3fc:1   
+__OSERR               3e8:1    __ProgramName         414:1   
+__SIGFPE              3f0:1    __SIGINT              3f4:1   
+__StackPtr            410:1    __STD_closedf        1dba:0   
+__STI_opendf         1d80:0    __WBenchMsg           40c:1   
+__XCEXIT              1be:0    ___base               3e4:1   
+SetPalette.ld          28-Sep-93 14:46:29  Symbol Section               Page 2-2
+
+symbol             offset:hunk symbol             offset:hunk
+___chkabort          1b1c:0    ___chkufb            1ad0:0   
+___closefunc         110c:1    ___construct         142c:0   
+___ctors              270:1    ___curdir             404:1   
+___dtors              278:1    ___exit              1688:0   
+___exitfuncs          374:1    ___fmask              320:1   
+___fmode              31c:1    ___fpinit            1444:0   
+___fpterm            145c:0    ___io2errno          1ddc:0   
+___iob                2ac:1    ___lseek             15f4:0   
+___main              16e4:0    ___nufbs              314:1   
+___oslibversion      11d8:1    ___sigfunc            280:1   
+___stack              2a8:1    ___stdiov37           378:1   
+___stdiowin           38c:1    ___top               1108:1   
+___ufbs               318:1    ___write             14f4:0   
+SetPalette.ld           28-Sep-93 14:46:29  Xref Section                Page 3-1
+
+symbol           (Def) Module  Off (Ref) Module  Off (Ref) Module  Off
+@exit            exit.c          4 _main.c       28c
+@main            main            0 _main.c       288
+@memchr          memchr          c _write.c       68 _write.c       c2
+@strncat         strncat         c _main.c       19c
+@strncpy         strncpy         c _main.c       174
+@_CXBRK          _cxbrk.c        4 _chkabor       32
+@_XCEXIT         c             1c2 autoopen      120
+@__autoopenfail  autoopen        0 diskfont       22
+@__chkabort      _chkabor        0 _lseek.c       1c _write.c       18
+@__chkufb        _chkufb.        4 _lseek.c       22 _write.c       1e
+@__exit          _exit.c         4 exit.c         52 _cxbrk.c       92
+                                   _cxbrk.c       b2 _cxbrk.c       e8
+@__io2errno      io2errno        4 _write.c       f0
+@__lseek         _lseek.c        e _write.c       54
+@__write         _write.c        c exit.c         40
+_DiskfontBase    diskfont        0 setpalet      4ba
+_DOSBase         dosbase         0 _cxbrk.c       66 _cxbrk.c       82
+                                   _main.c       1a6 _main.c       1ec
+                                   _main.c       210 _exit.c        40
+                                   _lseek.c       44 _lseek.c       82
+                                   _write.c       7a _write.c       96
+                                   _write.c       d4 _write.c       e4
+                                   setpalet      2f8 setpalet      32a
+                                   setpalet      35c setpalet      38e
+                                   setpalet      3be setpalet      3ee
+                                   setpalet     11b8 c              d4
+                                   c             188 c             214
+                                   c             246
+_errno           errno.c         0 _chkufb.       1c _chkufb.       3c
+                                   _lseek.c       2e _lseek.c       5c
+                                   _write.c       f4
+_GetRGB32            1e4c:0        setpalet       4c setpalet      510
+                                   setpalet      bdc setpalet      ca0
+                                   setpalet      cba setpalet      dfa
+                                   setpalet      e14
+_GfxBase         setpalet        0     1e6e:0            1e50:0       
+_LinkerDB              (0:*)       c               a
+_main            setpalet      986 main            6
+_SetRGB32            1e68:0        setpalet      1d0 setpalet      b24
+                                   setpalet      bfc setpalet      cda
+                                   setpalet      cfc setpalet      f72
+_SysBase         c              28 _main.c       178 _MemClea       4c
+__BSSBAS               (0:*)       c              14
+__BSSLEN               (0:*)       c              1c
+__MemCleanup     _MemClea        0 c             1f8
+__MemHeap        memheap.        0 _MemClea        6 _MemClea       24
+__OSERR          c               8 _chkufb.        c _lseek.c       36
+                                   _lseek.c       56 _write.c       3a
+                                   _write.c       ec
+__ProgramName    c              34 _cxbrk.c       12
+__STD_closedf    diskfont       3a _ctdt.o         c
+__STI_opendf     diskfont        0 _ctdt.o         4
+__WBenchMsg      c              2c autoopen       1a autoopen      100
+SetPalette.ld           28-Sep-93 14:46:29  Xref Section                Page 3-2
+
+symbol           (Def) Module  Off (Ref) Module  Off (Ref) Module  Off
+                                   _main.c        d2 _main.c       126
+                                   _main.c       15e
+__XCEXIT         c             1be _exit.c        52
+___base          c               4 _MemClea       30 _MemClea       40
+___construct     _constru        0 _ctdt.o         0
+___ctors         _ctdt.o         4 _fpinit.        4 _fpinit.        e
+                                   _fpinit.       26 _constru        0
+___dtors         _ctdt.o         c _fpinit.       1c
+___exitfuncs     exitfunc        0 exit.c          c
+___fmode         _fmode.c        0 _main.c       24e
+___fpinit        _fpinit.        0 c             1b4
+___fpterm        _fpinit.       18 c             1f4
+___iob           _iob.c          0 exit.c         1e _main.c       25a
+                                   _main.c       264 _main.c       26a
+                                   _main.c       272 _main.c       278
+                                   _main.c       27c
+___main          _main.c         0 c             1b8
+___nufbs         _ufb.c          0 _chkufb.       14 _main.c       248
+___oslibversion  oslibver        0 diskfont        8 autoopen       4a
+                                   autoopen       86
+___sigfunc       sigfunc.        0 _chkabor       20 _chkabor       36
+                                   _chkabor       3a _cxbrk.c       8c
+                                   _cxbrk.c       ac _cxbrk.c       e2
+                                   _cxbrk.c       f2 _exit.c         e
+___stack         stack.c         0 c              5c c              62
+                                   c              90
+___stdiov37      _stdv36.        0 _main.c       198
+___stdiowin      _stdwin.        0 autoopen       20 _main.c       134
+___top           _top.c          0 _MemClea       2a _MemClea       3a
+                                   _MemClea       76
+___ufbs          _ufb.c          4 _chkufb.       24 _main.c        f4
+                                   _exit.c        12
+SetPalette.ld           28-Sep-93 14:46:29  File Section                Page 4-1
+
+filename         punit    hunk     type       offset:hunk     size
+LIB:c.o          c        text     code            0:0         260
+                          __MERGED bss           3e0:1          54
+SetPalette.o     setpalet text     code          260:0        11cc
+                          __MERGED data            0:1         26c
+                          __MERGED bss           434:1         cc8
+T:DG5D.0000      _ctdt.o  __MERGED data          26c:1          14
+SetPalette.ld         28-Sep-93 14:46:29  Library Section               Page 5-1
+
+filename         punit    hunk     type       offset:hunk     size
+LIB:sc.lib       errno.c  text     code            -:-           0
+                          __MERGED bss          10fc:1           4
+                 memheap. text     code            -:-           0
+                          __MERGED bss          1100:1           4
+                 sigfunc. text     code            -:-           0
+                          __MERGED data          280:1          24
+                 _constru text     code         142c:0          18
+                          __MERGED data          2a4:1           4
+                 _fpinit. text     code         1444:0          30
+                 stack.c  text     code            -:-           0
+                          __MERGED data          2a8:1           4
+                 _MemClea text     code         1474:0          80
+                 dosbase  __MERGED bss          1104:1           4
+                 _iob.c   text     code            -:-           0
+                          __MERGED data          2ac:1          68
+                 _ufb.c   text     code            -:-           0
+                          __MERGED data          314:1           8
+                 _fmode.c text     code            -:-           0
+                          __MERGED data          31c:1           8
+                 _write.c text     code         14f4:0         100
+                 _lseek.c text     code         15f4:0          94
+                 _top.c   text     code            -:-           0
+                          __MERGED bss          1108:1           4
+                 _exit.c  text     code         1688:0          5c
+                          __MERGED bss          110c:1           4
+                 _main.c  text     code         16e4:0         2a0
+                          __MERGED bss          1110:1          c8
+                 _cxbrk.c text     code         1984:0         14c
+                          __MERGED data          324:1          50
+                 _chkufb. text     code         1ad0:0          4c
+                 _chkabor text     code         1b1c:0          50
+                 memchr   text     code         1b6c:0          24
+                 strncat  text     code         1b90:0          24
+                 strncpy  text     code         1bb4:0          24
+                 exitfunc text     code            -:-           0
+                          __MERGED data          374:1           4
+                 exit.c   text     code         1bd8:0          54
+                 autoopen text     code         1c2c:0         154
+                 oslibver text     code            -:-           0
+                          __MERGED bss          11d8:1           4
+                 diskfont text     code         1d80:0          5c
+                          __MERGED bss          11dc:1           8
+                 _stdv36. text     code            -:-           0
+                          __MERGED data          378:1          14
+                 _stdwin. text     code            -:-           0
+                          __MERGED data          38c:1          14
+                 io2errno text     code         1ddc:0          60
+                          __MERGED data          3a0:1          40
+                 main     text     code         1e3c:0          10
+LIB:amiga.lib    <noname> graphics code         1e4c:0          1c
+                 <noname> graphics code         1e68:0          20

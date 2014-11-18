@@ -1,0 +1,59 @@
+MODNAME	          = SetPalette
+VERSION		  = 1
+
+REMOTE		  = V$(VERSION)mf
+
+LD_FILE	          = $(MODNAME).ld
+LD_STRIP          = $(MODNAME)
+
+C_COMPILER        = SC
+C_COMPILER_OPTS   = CPU=68020
+
+LINKER            = Slink
+LINKER_OPTS	  = ADDSYM SC SD MAP $(MODNAME).map HLSXF PLAIN SWIDTH 16
+LINKER_OPTS_STRIP = ND
+
+C_SOURCES   = SetPalette.c
+ASM_SOURCES =
+OBJECTS     = SetPalette.o
+
+STARTUP	    = LIB:c.o
+LIBS	    = LIB:sc.lib LIB:amiga.lib
+
+
+
+
+##############################################################################
+# Build the stripped load file...
+#
+$(LD_STRIP):	$(LD_FILE)
+		$(LINKER) FROM $(LD_FILE) TO $(LD_STRIP) $(LINKER_OPTS_STRIP)
+
+
+
+##############################################################################
+# Build the load file...
+#
+$(LD_FILE):	$(OBJECTS) $(LIBS)
+
+		$(LINKER) <with <
+FROM $(STARTUP) $(OBJECTS) TO $(LD_FILE) LIB $(LIBS) $(LINKER_OPTS)
+<
+		BumpRev $(VERSION) $(MODNAME)_rev
+
+
+##############################################################################
+# Default rules...
+#
+.c.o:
+	$(C_COMPILER) NOLINK $(C_COMPILER_OPTS) $*.c
+
+.asm.o:
+	$(ASSEMBLER) $*.asm $(ASSEMBLER_OPTS) $*.o
+
+
+##############################################################################
+# All dependencies...
+#
+SetPalette.o: SetPalette.c $(MODNAME)_rev.h SetPalette_globals.h
+

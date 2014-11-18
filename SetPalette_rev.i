@@ -1,0 +1,14 @@
+VERSION		EQU	1
+REVISION	EQU	10
+DATE	MACRO
+		dc.b	'28.9.93'
+	ENDM
+VERS	MACRO
+		dc.b	'SetPalette 1.10'
+	ENDM
+VSTRING	MACRO
+		dc.b	'SetPalette 1.10 (28.9.93)',13,10,0
+	ENDM
+VERSTAG	MACRO
+		dc.b	0,'$VER: SetPalette 1.10 (28.9.93)',0
+	ENDM
